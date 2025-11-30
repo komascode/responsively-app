@@ -76,12 +76,16 @@ const UITheme = () => {
                           >
                             <div
                               className="mr-2 h-4 w-4 rounded"
-                              style={{
-                                backgroundColor:
-                                  preset === 'custom'
-                                    ? '#536be7'
-                                    : themePresets[preset].primary,
-                              }}
+                              style={
+                                preset === 'custom'
+                                  ? {
+                                      background:
+                                        'linear-gradient(90deg, #ff0000 0%, #ff7f00 14%, #ffff00 28%, #00ff00 42%, #0000ff 57%, #4b0082 71%, #9400d3 85%, #ff0000 100%)',
+                                    }
+                                  : {
+                                      backgroundColor: themePresets[preset].primary,
+                                    }
+                              }
                             />
                             {themeLabels[preset]}
                           </button>

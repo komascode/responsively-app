@@ -58,3 +58,4 @@ export const networkProfiles: Record<NetworkProfile, NetworkProfileConfig> = {
     offline: true,
   },
 };
+
